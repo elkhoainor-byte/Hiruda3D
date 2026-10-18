@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiruda 3D | Impresión 3D Premium en Navarra</title>
+    <meta name="description" content="Hiruda 3D - Impresión 3D premium con acabado artesanal en Pamplona / Berriozar (Navarra). Figuras personalizadas, gran formato y proyectos especiales.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #f8f9fa;
+        }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 60px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(59,130,246,0.15) 0%, transparent 70%);
+        }
+        .logo {
+            font-size: 2.8rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .logo span { color: #38bdf8; }
+        .tagline {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            position: relative;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(56,189,248,0.2);
+            border: 1px solid #38bdf8;
+            color: #7dd3fc;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            position: relative;
+        }
+
+        /* Sections */
+        section { padding: 70px 0; }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: #0f172a;
+            text-align: center;
+        }
+        .section-intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            color: #475569;
+            font-size: 1.1rem;
+        }
+
+        /* About */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        @media (max-width: 768px) {
+            .about-grid { grid-template-columns: 1fr; }
+        }
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .feature {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .feature-icon { font-size: 1.8rem; margin-bottom: 8px; }
+        .feature h3 { font-size: 1rem; margin-bottom: 5px; }
+
+        /* Services */
+        .services {
+            background: white;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .service-card {
+            background: #f1f5f9;
+            border-radius: 16px;
+            padding: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+        }
+        .service-card h3 {
+            color: #0ea5e9;
+            margin-bottom: 12px;
+            font-size: 1.25rem;
+        }
+
+        /* Contact */
+        .contact {
+            background: linear-gradient(135deg, #0f172a, #1e3a5f);
+            color: white;
+        }
+        .contact h2 { color: white; }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .contact-item {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 14px;
+            padding: 25px;
+            text-align: center;
+        }
+        .contact-item a {
+            color: #7dd3fc;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact-item a:hover { text-decoration: underline; }
+        .contact-icon { font-size: 2rem; margin-bottom: 12px; }
+
+        /* Footer */
+        footer {
+            background: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+        }
+        footer a { color: #38bdf8; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">Hiruda <span>3D</span></div>
+        <p class="tagline">Donde la tecnología 3D se encuentra con el acabado artesanal</p>
+        <div class="badge">✦ Impresión 3D Premium en Navarra</div>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <h2>Quiénes somos</h2>
+        <p class="section-intro">
+            Nacimos de la pasión por la impresión 3D y el respeto por el detalle. 
+            En Navarra, cerca de Pamplona y Berriozar, damos vida a ideas que combinan innovación y tradición.
+        </p>
+        
+        <div class="about-grid">
+            <div>
+                <p style="margin-bottom: 20px; color: #334155;">
+                    En <strong>Hiruda 3D</strong> no solo imprimimos. Diseñamos, fabricamos, ensamblamos, 
+                    enmasillamos, lijamos y acabamos cada pieza con un nivel de exigencia que nos define. 
+                    Trabajamos con filamento PLA de alta calidad y dedicamos el tiempo necesario para que 
+                    el resultado final sea impecable.
+                </p>
+                <p style="color: #334155;">
+                    Calidad que se nota al tacto y a la vista. Tecnología con alma artesanal.
+                </p>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Detalle y precisión</h3>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">✋</div>
+                    <h3>Acabado a mano</h3>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📐</div>
+                    <h3>Gran formato</h3>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">❤️</div>
+                    <h3>Cultura local</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <h2>Lo que hacemos por ti</h2>
+        <p class="section-intro">
+            Desde una figura coleccionable personalizada hasta una pieza de gran tamaño para un proyecto especial. 
+            Todo con el mismo estándar de calidad.
+        </p>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>🖨️ Impresión 3D personalizada</h3>
+                <p>Imprimimos en PLA de alta calidad según tu diseño o idea. Prototipos, piezas funcionales o elementos decorativos con acabados limpios y precisos.</p>
+            </div>
+            <div class="service-card">
+                <h3>🎨 Figuras y coleccionables</h3>
+                <p>Figuras pintadas a mano a todo detalle y barnizadas. Ideales para coleccionistas o regalos únicos (ej. capibaras personalizadas y más).</p>
+            </div>
+            <div class="service-card">
+                <h3>🏗️ Gran formato y proyectos especiales</h3>
+                <p>Piezas de gran tamaño. Ejemplo real: manos de los Gigantes de Berriozar en colaboración con Sortuz Taller (impresión, unión, enmasillado y lijado).</p>
+            </div>
+            <div class="service-card">
+                <h3>🛠️ Encargos a medida</h3>
+                <p>Cada proyecto empieza con una conversación. Entendemos lo que necesitas, proponemos la mejor solución y entregamos un resultado que suele superar expectativas.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contacto">
+    <div class="container">
+        <h2>Hablemos de tu próxima pieza</h2>
+        <p class="section-intro" style="color: #cbd5e1;">
+            Estamos en Navarra, zona Pamplona / Berriozar. Escríbenos o envíanos un WhatsApp. 
+            Respondemos con ganas y con detalle.
+        </p>
+        
+        <div class="contact-grid">
+            <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <h3>WhatsApp / Teléfono</h3>
+                <p><a href="https://wa.me/34614041675">614 04 16 75</a></p>
+                <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 8px;">Respuesta rápida · Ideal para fotos y dudas</p>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">📷</div>
+                <h3>Instagram</h3>
+                <p><a href="https://www.instagram.com/hiruda_3d/" target="_blank">@hiruda_3d</a></p>
+                <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 8px;">Mira nuestros trabajos y escríbenos por DM</p>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <h3>Email</h3>
+                <p><a href="mailto:hiruda3d@gmail.com">hiruda3d@gmail.com</a></p>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <h3>Ubicación</h3>
+                <p>Navarra<br>Zona Pamplona / Berriozar</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2025-2026 Hiruda 3D · Impresión 3D Premium en Navarra</p>
+        <p style="margin-top: 8px;">
+            <a href="https://www.instagram.com/hiruda_3d/" target="_blank">Instagram @hiruda_3d</a> · 
+            <a href="https://wa.me/34614041675">WhatsApp</a>
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
